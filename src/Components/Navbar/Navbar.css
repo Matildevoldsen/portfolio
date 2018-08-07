@@ -1,0 +1,15 @@
+.navbar {
+    background: #192a56;
+    height: 55px;
+    color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar ul {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

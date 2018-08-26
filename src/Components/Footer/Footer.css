@@ -1,0 +1,10 @@
+.footer {
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    min-height: 55px;
+}
+
+.footer p {
+    text-align: center;
+}

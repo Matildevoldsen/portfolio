@@ -7,48 +7,69 @@ import Footer from "./Components/Footer/Footer";
 import {NavLink, BrowserRouter, Route} from 'react-router-dom';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Hero from "./Components/Hero/Hero";
-import ProjectBox from "./Components/ProjectBox/ProjectBox";
 import Contact from "./Pages/Contact";
+import LoadingScreen from 'react-loading-screen';
 
 /*
 TODO: Make the intro/first part of what you see on the site: #fff.
  */
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: true
+        }
+    }
+
+    componentDidMount() {
+        console.log(this.state)
+        this.setState({isLoading: false});
+        console.log(this.state)
+    }
+
     render() {
         return (
             <BrowserRouter>
-                <div className="App">
-                    <Header>
-                        <Navbar>
-                            <li>
-                                <NavLink exact activeClassName="selected" to="/">Work</NavLink>
-                            </li>
+                <LoadingScreen
+                loading={this.state.isLoading}
+                bgColor='#f1f1f1'
+                spinnerColor='#9ee5f8'
+                textColor='#676767'
+                text='Loading something awesome!'
+                >
+                    <div className="App">
+                        <Header>
+                            <Navbar>
+                                <li>
+                                    <NavLink exact activeClassName="selected" to="/">Work</NavLink>
+                                </li>
 
-                            <li>
-                                <NavLink exact activeClassName="selected" to="/about">About</NavLink>
-                            </li>
+                                <li>
+                                    <NavLink exact activeClassName="selected" to="/about">About</NavLink>
+                                </li>
 
-                            <li>
-                                <NavLink exact activeClassName="selected" to="/contact">Contact</NavLink>
-                            </li>
+                                <li>
+                                    <NavLink exact activeClassName="selected" to="/contact">Contact</NavLink>
+                                </li>
 
-                            <li>
-                                <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen">Blog</a>
-                            </li>
-                        </Navbar>
-                    </Header>
+                                <li>
+                                    <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen">Blog</a>
+                                </li>
+                            </Navbar>
+                        </Header>
 
-                    <Route path="/" exact component={Home}/>
+                        <Route path="/" exact component={Home}/>
 
-                    <Route path="/about" component={About}/>
+                        <Route path="/about" component={About}/>
 
-                    <Route path="/contact" component={Contact}/>
+                        <Route path="/contact" component={Contact}/>
 
-                    <Footer>
-                        <p>Copyright &copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1} powered by Matilde Wittrup Enevoldsen</p>
-                    </Footer>
-                </div>
+                        <Footer>
+                            <p>Copyright &copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1} powered by
+                                Matilde Wittrup Enevoldsen</p>
+                        </Footer>
+                    </div>
+                </LoadingScreen>
             </BrowserRouter>
         );
     }

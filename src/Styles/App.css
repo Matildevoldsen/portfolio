@@ -92,7 +92,7 @@ a {
     .typewriter--effect h1 { font-size: 20px; margin: 20px 0; }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1600px) {
    .xl-container {
        max-width: 1600px;
        margin: 0 auto;

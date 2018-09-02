@@ -31,11 +31,11 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <LoadingScreen
-                loading={this.state.isLoading}
-                bgColor='#f1f1f1'
-                spinnerColor='#9ee5f8'
-                textColor='#676767'
-                text='Loading something awesome!'
+                    loading={this.state.isLoading}
+                    bgColor='#f1f1f1'
+                    spinnerColor='#9ee5f8'
+                    textColor='#676767'
+                    text='Loading something awesome!'
                 >
                     <div className="App">
                         <Header>
@@ -55,6 +55,7 @@ class App extends Component {
                                 <li>
                                     <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen">Blog</a>
                                 </li>
+                                <hr/>
                             </Navbar>
                         </Header>
 
@@ -65,8 +66,15 @@ class App extends Component {
                         <Route path="/contact" component={Contact}/>
 
                         <Footer>
-                            <p>Copyright &copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1} powered by
-                                Matilde Wittrup Enevoldsen</p>
+                            <div className="left">
+                                <p>Copyright &copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1}</p>
+                            </div>
+
+                            <div className="right">
+                                <a>Github</a>
+                                <a>Twitter</a>
+                                <a>LinkedIn</a>
+                            </div>
                         </Footer>
                     </div>
                 </LoadingScreen>

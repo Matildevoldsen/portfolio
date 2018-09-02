@@ -30,19 +30,50 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+}
+
+.navbar ul li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.navbar ul li a:active::before {
+    background-color: #000;
+}
+.navbar ul li a:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
 }
 
 a {
     text-decoration: none;
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 1098px) {
     .hide-md-sm-devices {
         display: none;
     }
 }
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 1098px) {
     .hide-larger-screens {
         display: none
     }

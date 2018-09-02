@@ -5,10 +5,14 @@
     padding: 15px 5px;
 }
 
+/* To display copyright info to the left */
+
 .footer .left {
     float: left;
     margin-left: 20px;
 }
+
+/* To display and change look and feel to the right of Github, e.t.c. */
 
 .footer .right {
     float: right;

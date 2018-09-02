@@ -71,9 +71,9 @@ class App extends Component {
                             </div>
 
                             <div className="right">
-                                <a>Github</a>
-                                <a>Twitter</a>
-                                <a>LinkedIn</a>
+                                <a href="https://github.com/Matildevoldsen">Github</a>
+                                <a href="https://twitter.com/MatildeWittrup">Twitter</a>
+                                <a href="https://www.linkedin.com/in/matilde-wittrup-enevoldsen/">LinkedIn</a>
                             </div>
                         </Footer>
                     </div>

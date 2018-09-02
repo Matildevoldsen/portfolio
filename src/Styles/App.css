@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto'); /* Import of Roboto font*/
 
+/* Reseting all CSS elements to border-box */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,12 @@ body {
     font-family: Roboto, sans-serif;
     background-color: #fff;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar */
 
 .navbar ul li {
     float: left;
@@ -39,7 +46,7 @@ body {
     line-height: 16px;
     font-weight: 900;
     text-transform: uppercase;
-    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
 }
 
 .navbar ul li a::before {
@@ -53,19 +60,19 @@ body {
     background-color: #fff;
     transform-origin: right top;
     transform: scale(0, 1);
-    transition: color 0.1s,transform 0.2s ease-out;
+    transition: color 0.1s, transform 0.2s ease-out;
 }
+
 .navbar ul li a:active::before {
     background-color: #000;
 }
+
 .navbar ul li a:hover::before {
     transform-origin: left top;
     transform: scale(1, 1);
 }
 
-a {
-    text-decoration: none;
-}
+/* Hidden on specific screen sizes */
 
 @media all and (max-width: 1098px) {
     .hide-md-sm-devices {
@@ -79,6 +86,8 @@ a {
     }
 }
 
+/* Typewriter effect */
+
 .typewriter--effect {
     margin: auto;
     max-width: 598px;
@@ -90,42 +99,58 @@ a {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
     margin: 45px 0;
     font-size: 30px;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #192a56; }
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #192a56;
+    }
 }
 
 @media all and (max-width: 450px) {
     .typewriter--effect {
         max-width: 340px;
     }
-    .typewriter--effect h1 { font-size: 17px; margin: 20px 0; }
+
+    .typewriter--effect h1 {
+        font-size: 17px;
+        margin: 20px 0;
+    }
 }
 
 @media all and (max-width: 760px) and (min-width: 450px) {
     .typewriter--effect {
         max-width: 400px;
     }
-    .typewriter--effect h1 { font-size: 20px; margin: 20px 0; }
+
+    .typewriter--effect h1 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
 }
 
+/* Containers */
 @media all and (min-width: 1600px) {
-   .xl-container {
-       max-width: 1600px;
-       margin: 0 auto;
-   }
+    .xl-container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }

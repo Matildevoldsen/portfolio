@@ -23,7 +23,7 @@
     -o-transform: translateY(50px);
     transform: translateY(50px);
     text-decoration: none;
-    color: #fff;
+    color: #f5f6fa;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -42,6 +42,7 @@
 
 @media all and (max-width: 760px) {
     .box h2, .box:hover h2 {
+        font-size: 20px;
         opacity: 1 !important;
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);

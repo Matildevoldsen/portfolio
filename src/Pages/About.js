@@ -6,10 +6,11 @@ export default class About extends Component {
         * TODO: Create a past experience
         * TODO: Create educational experience and certificates.
         * TODO: Create an advanced layout.
+        * TODO: Implement commits
         * */
         return (
             <div>
-                <h1>About</h1>
+
             </div>
         );
     }

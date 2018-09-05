@@ -10,7 +10,13 @@ export default class About extends Component {
         * */
         return (
             <div>
+                <div className="about--top">
+                    {/* TODO: Profile and profile picture */}
+                </div>
 
+                <div className="about--container">
+                    {/* TODO: Implement cards with content. */}
+                </div>
             </div>
         );
     }

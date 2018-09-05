@@ -59,7 +59,7 @@ class App extends Component {
                             </Navbar>
                         </Header>
 
-                        <Route path="/" exact component={Home}/>
+                        <Route path="/work" exact component={Home}/>
 
                         <Route path="/about" component={About}/>
 

@@ -23,6 +23,11 @@ a {
     color: #273c75;
 }
 
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
 /* Navigation bar */
 
 .navbar ul li {
@@ -153,5 +158,436 @@ a {
     .xl-container {
         max-width: 1600px;
         margin: 0 auto;
+    }
+}
+
+/**
+ * Section About
+ */
+.about-page {
+    position: relative;
+}
+
+.about-page::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: '';
+    background-color: #000;
+    min-height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1519670345864-d7d68dcd43ea?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=50e2325f9696b2103c9eb637d3c70103&auto=format&fit=crop&w=2090&q=80");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.section-about {
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 950px;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.section-about .section-text-btn {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section-about .section-box {
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.section-about .profile {
+    padding: 57px 50px 15px 50px;
+}
+
+.section-about .profile-photo {
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+.section-about .profile-info {
+    color: #3d4451;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dedede;
+}
+
+.section-about .profile-title {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.section-about .profile-title span {
+    font-weight: 300;
+}
+
+.section-about .profile-position {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.profile-photo {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-photo img {
+    width: 100%;
+    display: block;
+}
+
+.profile-photo .photo-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease-out,visibility .2s ease-out;
+}
+
+.profile-photo:hover .photo-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile-items {
+    margin-bottom: 18px;
+}
+
+.profile-preword {
+    margin-bottom: 10px;
+}
+
+.profile-preword span {
+    background-color: #07aaf5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    display: inline-block;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.profile-preword span:before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 5px;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent;
+    border-left-color: #07aaf5;
+}
+
+.profile-share {
+    float: right;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#profileShareBtn  {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+#profileShareBtn:hover {
+    opacity: 0.7;
+}
+
+#profileShareWrap {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 250ms ease-out;
+    -moz-transition: opacity 250ms ease-out;
+    transition: opacity 250ms ease-out;
+}
+
+#profileShareWrap.opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.profile-share .rsicon {
+    color: #b6b4b5;
+    font-size: 29px;
+    line-height: 29px;
+    vertical-align: top;
+}
+
+.profile-share-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    background: rgba(0,0,0,0.85);
+    overflow-y: auto;
+}
+
+.profile-share-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-share-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px 20px;
+}
+
+#profileShareClose {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+
+#profileShareClose .rsicon {
+    line-height: 38px;
+}
+
+#profileShareWrap {
+    color: #3d4451;
+}
+
+.profile-share-inner {
+    background: #fff;
+    padding: 80px 20px;
+    max-width: 500px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.profile-share-title {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.profile-share-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-share-list li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.profile-share-list a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    color: #ffffff !important;
+    background-color: #1f1f1f;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-transition: opacity 250ms ease-out;
+    -moz-transition: opacity 250ms ease-out;
+    transition: opacity 250ms ease-out;
+}
+
+.profile-share-list a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.profile-share-list .rsicon-facebook {
+    background-color: #2d5f9a;
+}
+
+.profile-share-list .rsicon-pinterest {
+    background-color: #be1e2d;
+}
+
+.profile-share-list .rsicon-twitter {
+    background-color: #00c3f3;
+}
+
+.profile-share-list .rsicon-youtube {
+    background-color: #bb0000;
+}
+
+.profile-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-list li {
+    margin-bottom: 13px;
+}
+
+.profile-list .title {
+    display: block;
+    width: 120px;
+    float: left;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.profile-list .cont {
+    display: block;
+    margin-left: 125px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #9da0a7;
+}
+
+.profile-list .cont a {
+    color: inherit;
+}
+
+.profile-list .cont.profile-vacation {
+    font-size: 14px;
+}
+
+.profile-list .button {
+    background-color: #07aaf5;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: none;
+    padding: 5px 8px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.section-about .profile img {
+    width: 100%;
+}
+
+@media all and (max-width: 1078px){
+    .section-about .profile-photo {
+        margin-right: 0;
+    }
+}
+
+.profile-list .rsicon {
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+
+.profile-social {
+    padding: 15px 0;
+    background-color: #07aaf5;
+}
+
+
+@media (max-width: 992px) {
+    .section-about .profile {
+        padding: 50px 40px 15px 40px;
+    }
+
+    .section-about .profile-photo {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #profileShareClose {
+        top: -60px;
+        right: 0;
+    }
+    .section-about {
+        padding-top: 0;
+    }
+
+    .section-about .profile {
+        padding: 30px 20px 15px 20px;
+    }
+
+    .section-about .profile-photo {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .profile-preword {
+        float: none;
+    }
+
+    .profile-preword span {
+        min-width: 150px;
+        padding: 9px 12px;
+    }
+
+    .profile-list .title, .profile-list .cont {
+        width: 100%;
+        float: none;
+        line-height: 1.2;
+    }
+
+    .profile-list .title {
+        margin-bottom: 3px;
+    }
+
+    .profile-list .cont {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-about .row > div {
+        width: 100%;
+    }
+
+    .section-about .profile-title {
+        font-size: 28px;
     }
 }

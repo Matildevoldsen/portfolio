@@ -189,13 +189,17 @@ p {
     font-family: "Open Sans", sans-serif;
 }
 
-
-
 .section-about .section-text-btn {
     padding-left: 5%;
     padding-right: 5%;
 }
 
+@media (max-width: 770px) {
+    .section-about .section-box {
+        margin: 0 auto;
+        width: 85%;
+    }
+}
 .section-about .section-box {
     padding: 0;
     background-color: #fff;
@@ -207,7 +211,7 @@ p {
 }
 
 .section-about .profile-photo {
-    margin-right: 10%;
+
     margin-bottom: 10px;
 }
 
@@ -243,7 +247,7 @@ p {
 
 .profile-photo img {
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 .profile-photo .photo-hover {
@@ -254,7 +258,7 @@ p {
     height: 100%;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .2s ease-out,visibility .2s ease-out;
+    transition: opacity .2s ease-out, visibility .2s ease-out;
 }
 
 .profile-photo:hover .photo-hover {
@@ -302,7 +306,7 @@ p {
     margin-bottom: 10px;
 }
 
-#profileShareBtn  {
+#profileShareBtn {
     border: 0;
     margin: 0;
     padding: 0;
@@ -345,7 +349,7 @@ p {
     height: 100%;
     z-index: 9999;
     position: fixed;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     overflow-y: auto;
 }
 
@@ -507,11 +511,12 @@ p {
     width: 100%;
 }
 
-@media all and (max-width: 1078px){
-    .section-about .profile-photo {
-        margin-right: 0;
+@media (min-width: 1200px) {
+    .profile-photo {
+        margin-right: 10% !important;
     }
 }
+
 
 .profile-list .rsicon {
     margin-right: 10px;
@@ -522,7 +527,6 @@ p {
     padding: 15px 0;
     background-color: #07aaf5;
 }
-
 
 @media (max-width: 992px) {
     .section-about .profile {
@@ -539,6 +543,7 @@ p {
         top: -60px;
         right: 0;
     }
+
     .section-about {
         padding-top: 0;
     }
@@ -589,5 +594,36 @@ p {
 
     .section-about .profile-title {
         font-size: 28px;
+    }
+}
+
+.about--content {
+    width: 60%;
+    margin: 35px auto;
+    padding: 10px;
+    color: #1f1f1f;
+}
+
+.about--content h1, .about--content h2, .about--content h3, .about--content h4, .about--content h5 {
+    font-size: 22px;
+    line-height: 2;
+}
+
+.about--content p {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+@media all and (max-width: 660px) {
+    .about--content {
+        width: 96%;
+        padding: 5px;
+    }
+}
+
+@media all and (max-width: 960px) {
+    .about--content {
+        width: 85%;
+        padding: 5px;
     }
 }

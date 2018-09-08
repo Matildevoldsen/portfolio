@@ -45,6 +45,11 @@ export default class About extends Component {
                         </div>
                     </div>
                 </section>
+
+                <section className="about--content">
+                    <h3>Personal Statement</h3>
+                    <p>A strong conceptual thinker who has a keen interest in all things related to the Internet. She is committed to having an impact on the future of any company that she works for and possesses the enthusiasm and commitment to learn and develop her career within a fast paced and growing business. She has a track record of building fluid and dynamic websites that are user-friendly. Right now she is looking for a suitable opportunity that will not only take her career to the next level but will also allow her to work alongside a very specialized team.</p>
+                </section>
             </div>
         );
     }

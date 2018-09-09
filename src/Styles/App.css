@@ -184,7 +184,7 @@ p {
 .section-about {
     padding-top: 40px;
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 1000px;
     position: relative;
     font-family: "Open Sans", sans-serif;
 }
@@ -200,6 +200,7 @@ p {
         width: 85%;
     }
 }
+
 .section-about .section-box {
     padding: 0;
     background-color: #fff;
@@ -220,6 +221,10 @@ p {
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #dedede;
+}
+
+.profile-center {
+    margin: 0 auto;
 }
 
 .section-about .profile-title {
@@ -517,7 +522,6 @@ p {
     }
 }
 
-
 .profile-list .rsicon {
     margin-right: 10px;
     vertical-align: baseline;
@@ -553,7 +557,7 @@ p {
     }
 
     .section-about .profile-photo {
-        max-width: 400px;
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
     }

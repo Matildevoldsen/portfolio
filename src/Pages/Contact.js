@@ -8,7 +8,7 @@ export default class Contact extends Component {
         return (
             <div>
                 <section className="section section-contact">
-                    <form action="https://formspree.io/matilde.enevoldsen19@gmail.com" method="post">
+                    <form autocomplete="off" action="https://formspree.io/matilde.enevoldsen19@gmail.com" method="post">
                         <Box>
                             <h1>Contact</h1>
                             <Input

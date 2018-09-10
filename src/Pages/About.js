@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Box from '../Components/Box/Box'
+import List from "../Components/List/List";
 
 export default class About extends Component {
     render() {
@@ -20,7 +21,7 @@ export default class About extends Component {
                                     </div>
                                     <div className="col-lg-7 profile-center">
                                         <div className="profile-info">
-                                            <div className="profile-items clearfix">
+                                            <div className="profile-items">
                                                 <div className="profile-preword"><span>Hello</span></div>
                                             </div>
                                             <h1 className="profile-title">
@@ -29,27 +30,30 @@ export default class About extends Component {
                                             </h1>
                                             <h2 className="profile-position">Full Stack Web Developer</h2></div>
                                         <ul className="profile-list">
-                                            <li className="clearfix">
-                                                <strong className="title">Location</strong>
-                                                <span className="cont">Copenhagen, Denmark</span>
-                                            </li>
-                                            <li className="clearfix">
-                                                <strong className="title">E-mail</strong>
-                                                <span className="cont">matilde.enevoldsen@gmail.com</span>
-                                            </li>
-                                            <li className="clearfix">
-                                                <strong className="title">Phone</strong>
-                                                <span className="cont">0045 20878716</span>
-                                            </li>
-                                            <li className="clearfix">
-                                                <strong className="title">Education</strong>
-                                                <span className="cont">BSc Full-stack web development - 2018-2019 (part-time)</span>
-                                            </li>
-                                            <li className="clearfix">
-                                                <strong className="title">Educational Institution</strong>
-                                                <span className="cont"><a
-                                                    href="https://www.openclassrooms.com">OpenClassrooms</a></span>
-                                            </li>
+                                            <List
+                                                title="Location"
+                                                cont="Copenhagen, Denmark"
+                                            />
+
+                                            <List
+                                                title="E-mail"
+                                                cont="matilde.enevoldsen@gmail.com"
+                                            />
+
+                                            <List
+                                                title="Phone"
+                                                cont="0045 20878716"
+                                            />
+
+                                            <List
+                                                title="Education"
+                                                cont="BSc Full-stack web development - 2018-2019 (part-time)"
+                                            />
+
+                                            <List
+                                                title="Educational Institution"
+                                                cont="OpenClassrooms"
+                                            />
                                         </ul>
                                     </div>
                                 </div>

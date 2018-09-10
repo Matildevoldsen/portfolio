@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './ProjectBox.css';
 
 export default class ProjectBox extends Component {
     render() {

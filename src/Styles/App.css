@@ -566,11 +566,6 @@ p {
 }
 
 @media (max-width: 767px) {
-    #profileShareClose {
-        top: -60px;
-        right: 0;
-    }
-
     .section-about {
         padding-top: 0;
     }
@@ -897,7 +892,6 @@ input, textarea {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
-
     width: 100%;
     border: none;
     border-bottom: 1px solid #757575;

@@ -15,14 +15,17 @@ export default class Contact extends Component {
                                 title="Name"
                                 name="name"
                             />
+
                             <Input
                                 title="Subject"
                                 name="_subject"
                             />
+
                             <Input
                                 title="E-mail"
                                 name="_replyto"
                             />
+
                             <Textarea
                                 title="Content"
                                 name="content"

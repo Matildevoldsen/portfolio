@@ -71,7 +71,6 @@ export default class About extends Component {
                         Right now she is looking for a suitable opportunity that will not only take her career to the
                         next level but will also allow her to work alongside a very specialized team.</p>
                 </section>
-
             </div>
         );
     }

@@ -8,7 +8,6 @@ import {NavLink, BrowserRouter, Route} from 'react-router-dom';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import LoadingScreen from 'react-loading-screen';
 
 /*
 TODO: Make the intro/first part of what you see on the site: #fff.
@@ -16,27 +15,12 @@ TODO: Make the intro/first part of what you see on the site: #fff.
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            isLoading: true
-        }
-    }
 
-    componentDidMount() {
-        console.log(this.state)
-        this.setState({isLoading: false});
-        console.log(this.state)
     }
 
     render() {
         return (
             <BrowserRouter>
-                <LoadingScreen
-                    loading={this.state.isLoading}
-                    bgColor='#f1f1f1'
-                    spinnerColor='#9ee5f8'
-                    textColor='#676767'
-                    text='Loading something awesome!'
-                >
                     <div className="App">
                         <Header>
                             <Navbar>
@@ -77,7 +61,6 @@ class App extends Component {
                             </div>
                         </Footer>
                     </div>
-                </LoadingScreen>
             </BrowserRouter>
         );
     }

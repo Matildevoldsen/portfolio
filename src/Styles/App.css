@@ -713,7 +713,7 @@ p {
     }
 
     #box4 {
-        background-image: url("https://i2.wp.com/chalets.matilde-wittrup.site/wp-content/uploads/2018/05/Property-2f0e053c08ddf7c1db6f50ccf97d56d9-41973221.jpg?w=1024");
+        background-image: url("https://images.unsplash.com/photo-1538619450218-d97b1deaac2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=407083eb69e34caa688ffd3e4320ae06&auto=format&fit=crop&w=1658&q=80");
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -721,7 +721,7 @@ p {
     }
 
     #box1 {
-        background-image: url('../img/Coffee.jpg');
+        background-image: url('https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d860cf2362f95db4d7f321e9d22e31d&auto=format&fit=crop&w=1650&q=80');
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -775,7 +775,7 @@ p {
     }
 
     #box1::before {
-        background-image: url('../img/Coffee.jpg');
+        background-image: url('https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d860cf2362f95db4d7f321e9d22e31d&auto=format&fit=crop&w=1650&q=80');
     }
 
     #box1:hover::before {
@@ -799,7 +799,7 @@ p {
     }
 
     #box4:before {
-        background-image: url('https://i2.wp.com/chalets.matilde-wittrup.site/wp-content/uploads/2018/05/Property-2f0e053c08ddf7c1db6f50ccf97d56d9-41973221.jpg?w=1024');
+        background-image: url('https://images.unsplash.com/photo-1538619450218-d97b1deaac2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=407083eb69e34caa688ffd3e4320ae06&auto=format&fit=crop&w=1658&q=80');
     }
 
     #box4:hover::before {

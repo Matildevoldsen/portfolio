@@ -63,7 +63,7 @@ p {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
@@ -79,10 +79,11 @@ p {
 }
 
 .navbar {
+    background: #192a56;
     height: 55px;
+    color: #f5f6fa;
     display: flex;
     justify-content: center;
-    background-color: #192a56;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -720,7 +721,7 @@ p {
     }
 
     #box1 {
-        background-image: url('../img/Coffee.jpg');
+        background-image: url('https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d860cf2362f95db4d7f321e9d22e31d&auto=format&fit=crop&w=1650&q=80');
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -774,7 +775,7 @@ p {
     }
 
     #box1::before {
-        background-image: url('../img/Coffee.jpg');
+        background-image: url('https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d860cf2362f95db4d7f321e9d22e31d&auto=format&fit=crop&w=1650&q=80');
     }
 
     #box1:hover::before {

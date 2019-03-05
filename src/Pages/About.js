@@ -4,7 +4,6 @@ import List from "../Components/List/List";
 
 export default class About extends Component {
     render() {
-
         return (
             <div className="about-page">
                 <section id="about" className="section section-about">
@@ -14,15 +13,15 @@ export default class About extends Component {
                                 <div className="row">
                                     <div className="col-lg-5">
                                         <div className="profile-photo mw-100">
-                                            <img alt="A photo of me"
-                                                 src="https://scontent.fcph2-1.fna.fbcdn.net/v/t1.0-9/29426111_619322285076797_3976231470011510933_n.jpg?_nc_cat=0&oh=173f90911df1a0b86611420c941c7c1b&oe=5C2D4124"
+                                            <img alt="Matilde Wittrup Enevoldsen"
+                                                 src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/29426111_619322285076797_3976231470011510933_n.jpg?_nc_cat=109&_nc_ht=scontent-lht6-1.xx&oh=062f30eb0aae60b764f9d841ad392e38&oe=5D1A8F24"
                                                  className="img-fluid photo"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-7 profile-center">
                                         <div className="profile-info">
                                             <div className="profile-items">
-                                                <div className="profile-preword"><span>Hello</span></div>
+                                                <div className="profile-preword"><span>Hello there!</span></div>
                                             </div>
                                             <h1 className="profile-title">
                                                 <span>I'm </span>
@@ -32,7 +31,7 @@ export default class About extends Component {
                                         <ul className="profile-list">
                                             <List
                                                 title="Location"
-                                                cont="Copenhagen, Denmark"
+                                                cont="London, United Kingdom"
                                             />
 
                                             <List
@@ -42,12 +41,22 @@ export default class About extends Component {
 
                                             <List
                                                 title="Phone"
-                                                cont="0045 20878716"
+                                                cont="0044 07449474947"
                                             />
 
                                             <List
                                                 title="Education"
                                                 cont="BSc Full-stack web development - 2018-2019 (part-time)"
+                                            />
+
+                                            <List
+                                                title="Job"
+                                                cont="Junior Full Stack Developer"
+                                            />
+
+                                            <List
+                                                title="Working at"
+                                                cont="Zodiac Media"
                                             />
 
                                             <List

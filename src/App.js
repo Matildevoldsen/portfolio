@@ -22,9 +22,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        console.log(this.state)
         this.setState({isLoading: false});
-        console.log(this.state)
     }
 
     render() {
@@ -53,7 +51,7 @@ class App extends Component {
                                 </li>
 
                                 <li>
-                                    <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen">Blog</a>
+                                    <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen" rel="noopener noreferrer">Blog</a>
                                 </li>
                                 <hr/>
                             </Navbar>

@@ -63,7 +63,7 @@ p {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
@@ -79,11 +79,10 @@ p {
 }
 
 .navbar {
-    background: #192a56;
     height: 55px;
-    color: #f5f6fa;
     display: flex;
     justify-content: center;
+    background-color: #192a56;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -713,7 +712,7 @@ p {
     }
 
     #box4 {
-        background-image: url("https://i2.wp.com/chalets.matilde-wittrup.site/wp-content/uploads/2018/05/Property-2f0e053c08ddf7c1db6f50ccf97d56d9-41973221.jpg?w=1024");
+        background-image: url("https://images.unsplash.com/photo-1538619450218-d97b1deaac2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=407083eb69e34caa688ffd3e4320ae06&auto=format&fit=crop&w=1658&q=80");
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -799,7 +798,7 @@ p {
     }
 
     #box4:before {
-        background-image: url('https://i2.wp.com/chalets.matilde-wittrup.site/wp-content/uploads/2018/05/Property-2f0e053c08ddf7c1db6f50ccf97d56d9-41973221.jpg?w=1024');
+        background-image: url("https://images.unsplash.com/photo-1538619450218-d97b1deaac2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=407083eb69e34caa688ffd3e4320ae06&auto=format&fit=crop&w=1658&q=80");
     }
 
     #box4:hover::before {

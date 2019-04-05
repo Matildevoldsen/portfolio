@@ -92,6 +92,8 @@ p {
     display: inline;
 }
 
+
+
 /* Hidden on specific screen sizes */
 
 @media all and (max-width: 1098px) {
@@ -151,8 +153,12 @@ p {
     }
 
     .typewriter--effect h1 {
-        font-size: 17px;
+        font-size: 13px;
         margin: 20px 0;
+    }
+
+    .navbar ul li {
+        padding: 5px 2px;
     }
 }
 

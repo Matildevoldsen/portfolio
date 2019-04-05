@@ -1,7 +1,12 @@
 {
-  "main.css": "static/css/main.f1321a57.css",
-  "main.css.map": "static/css/main.f1321a57.css.map",
-  "main.js": "static/js/main.d7bc14eb.js",
-  "main.js.map": "static/js/main.d7bc14eb.js.map",
-  "static/media/Coffee.jpg": "static/media/Coffee.8c6f6128.jpg"
+  "main.css": "static/css/main.ed7ac17f.css",
+  "main.css.map": "static/css/main.ed7ac17f.css.map",
+  "main.js": "static/js/main.b6828468.js",
+  "main.js.map": "static/js/main.b6828468.js.map",
+  "static/media/Coffee.jpg": "static/media/Coffee.9728294f.jpg",
+  "static/media/books.jpeg": "static/media/books.78095c12.jpeg",
+  "static/media/coding.jpeg": "static/media/coding.5918e6ab.jpeg",
+  "static/media/film.jpeg": "static/media/film.e76276de.jpeg",
+  "static/media/profile.jpg": "static/media/profile.9932a733.jpg",
+  "static/media/restaurant.jpg": "static/media/restaurant.02214b71.jpg"
 }

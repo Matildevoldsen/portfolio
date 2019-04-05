@@ -31,9 +31,9 @@ export default class Home extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <a href="http://chalets.matilde-wittrup.site/">
+                            <a href="https://github.com/Matildevoldsen/myreads">
                                 <ProjectBox boxId="4">
-                                    <h2>Chalets & Caviar</h2>
+                                    <h2>MyReads</h2>
                                 </ProjectBox>
                             </a>
                         </div>

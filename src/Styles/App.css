@@ -713,7 +713,7 @@ p {
     }
 
     #box4 {
-        background-image: url("https://images.unsplash.com/photo-1538619450218-d97b1deaac2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=407083eb69e34caa688ffd3e4320ae06&auto=format&fit=crop&w=1658&q=80");
+        background-image: url("../img/books.jpeg");
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -721,7 +721,7 @@ p {
     }
 
     #box1 {
-        background-image: url('https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d860cf2362f95db4d7f321e9d22e31d&auto=format&fit=crop&w=1650&q=80');
+        background-image: url('../img/Coffee.jpg');
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -729,7 +729,7 @@ p {
     }
 
     #box2 {
-        background-image: url('https://images.unsplash.com/photo-1532602254606-19fa4578d4eb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=09d885c68b1b368b7fc6b4fa23d0ea32&auto=format&fit=crop&w=1655&q=80');
+        background-image: url('../img/film.jpeg');
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -737,7 +737,7 @@ p {
     }
 
     #box5 {
-        background-image: url("https://www.theriverside.co.uk/images/Inside-Restaurant.jpg");
+        background-image: url("../img/restaurant.jpg");
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -746,7 +746,7 @@ p {
 
     /*TODO: Experiment with this idea: https://css-tricks.com/almanac/properties/c/content/*/
     #box6 {
-        background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=630');
+        background-image: url('../img/coding.jpeg');
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -775,7 +775,7 @@ p {
     }
 
     #box1::before {
-        background-image: url('https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d860cf2362f95db4d7f321e9d22e31d&auto=format&fit=crop&w=1650&q=80');
+        background-image: url('../img/Coffee.jpg');
     }
 
     #box1:hover::before {
@@ -787,7 +787,7 @@ p {
     }
 
     #box2:before {
-        background-image: url('https://images.unsplash.com/photo-1532602254606-19fa4578d4eb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=09d885c68b1b368b7fc6b4fa23d0ea32&auto=format&fit=crop&w=1655&q=80');
+        background-image: url('../img/film.jpeg');
     }
 
     #box2:hover::before {
@@ -799,7 +799,7 @@ p {
     }
 
     #box4:before {
-        background-image: url("https://images.unsplash.com/photo-1538619450218-d97b1deaac2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=407083eb69e34caa688ffd3e4320ae06&auto=format&fit=crop&w=1658&q=80");
+        background-image: url("../img/books.jpeg");
     }
 
     #box4:hover::before {
@@ -811,7 +811,7 @@ p {
     }
 
     #box5::before {
-        background-image: url('https://www.theriverside.co.uk/images/Inside-Restaurant.jpg');
+        background-image: url("../img/restaurant.jpg");
     }
 
     #box5:hover::before {
@@ -823,7 +823,7 @@ p {
     }
 
     #box6::before {
-        background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=630');
+        background-image: url('../img/coding.jpeg');
     }
 
     #box6:hover::before {

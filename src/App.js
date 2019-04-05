@@ -21,47 +21,47 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                    <div className="App">
-                        <Header>
-                            <Navbar>
-                                <li>
-                                    <NavLink exact activeClassName="selected" to="/">Work</NavLink>
-                                </li>
+                <div className="App">
+                    <Header>
+                        <Navbar>
+                            <li>
+                                <NavLink exact activeClassName="selected" to="/">Work</NavLink>
+                            </li>
 
-                                <li>
-                                    <NavLink exact activeClassName="selected" to="/about">About</NavLink>
-                                </li>
+                            <li>
+                                <NavLink exact activeClassName="selected" to="/about">About</NavLink>
+                            </li>
 
-                                <li>
-                                    <NavLink exact activeClassName="selected" to="/contact">Contact</NavLink>
-                                </li>
+                            <li>
+                                <NavLink exact activeClassName="selected" to="/contact">Contact</NavLink>
+                            </li>
 
-                                <li>
-                                    <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen" rel="noopener noreferrer">Blog</a>
-                                </li>
-                                <hr/>
-                            </Navbar>
-                        </Header>
+                            <li>
+                                <a target="_blank" href="https://medium.com/@matildewittrupenevoldsen"
+                                   rel="noopener noreferrer">Blog</a>
+                            </li>
+                            <hr/>
+                        </Navbar>
+                    </Header>
 
-                        <Route path="/" exact component={Home}/>
+                    <Route path="/" exact component={Home}/>
 
-                        <Route path="/about" component={About}/>
+                    <Route path="/about" component={About}/>
 
-                        <Route path="/contact" component={Contact}/>
+                    <Route path="/contact" component={Contact}/>
 
-                        <Footer>
-                            <div className="left">
-                                <p>Copyright &copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1}</p>
-                            </div>
+                    <Footer>
+                        <div className="left">
+                            <p>Copyright &copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1}</p>
+                        </div>
 
-                            <div className="right">
-                                <a href="https://github.com/Matildevoldsen">Github</a>
-                                <a href="https://twitter.com/MatildeWittrup">Twitter</a>
-                                <a href="https://www.linkedin.com/in/matilde-wittrup-enevoldsen/">LinkedIn</a>
-                            </div>
-                        </Footer>
-                    </div>
-                </LoadingScreen>
+                        <div className="right">
+                            <a href="https://github.com/Matildevoldsen">Github</a>
+                            <a href="https://twitter.com/MatildeWittrup">Twitter</a>
+                            <a href="https://www.linkedin.com/in/matilde-wittrup-enevoldsen/">LinkedIn</a>
+                        </div>
+                    </Footer>
+                </div>
             </BrowserRouter>
         );
     }

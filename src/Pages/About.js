@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Box from '../Components/Box/Box'
 import List from "../Components/List/List";
+import profilePicture from '../img/profile.jpg';
 
 export default class About extends Component {
     render() {
@@ -14,7 +15,7 @@ export default class About extends Component {
                                     <div className="col-lg-5">
                                         <div className="profile-photo mw-100">
                                             <img alt="Matilde Wittrup Enevoldsen"
-                                                 src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/29426111_619322285076797_3976231470011510933_n.jpg?_nc_cat=109&_nc_ht=scontent-lht6-1.xx&oh=062f30eb0aae60b764f9d841ad392e38&oe=5D1A8F24"
+                                                 src={profilePicture}
                                                  className="img-fluid photo"/>
                                         </div>
                                     </div>
